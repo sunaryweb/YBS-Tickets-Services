@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBS Tickets</title>
+<style>
+    .container{
+     margin-top: 30px;
+     margin-left: 30px;
+    }
+    .tickets-input{
+        width:50px;
+        border:1px solid rgb(226, 223, 223);
+        border-radius: 10px;
+        padding:5px 10px;
+    }
+    .buy-button,
+    .sell-button{
+        padding:5px 20px;
+        border: none;
+        border-radius: 10px;
+    }
+    .coins-add-button{
+        border:.3px solid rgb(216, 216, 216);
+        border-radius: 5px;
+        background-color: white;
+    }
+    .coins-add-button:hover{
+        background-color: rgb(241, 241, 241);
+    }
+    *{
+        font-size: 18px;
+        font-family: arial;
+        margin:15px 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <span>Coins - </span>
+        <span class="remaining-coins">0</span>
+        <button class="coins-add-button">&#43;</button><br>
+        <span>Tickets - </span>
+        <span class="remaining-tickets">0</span><br>
+        <div class="">
+        <span class="">Special Buying For 1 Tickets - </span>
+        <span class="calculate-for-buying">0</span><br>
+        <span class="">Special Selling For 1 Tickets - </span>
+        <span class="calculate-for-selling">0</span>
+        </div>
+        <input class="buy-button" type="button" value="Buy 1">
+        <input class="sell-button" type="button" value="Sell 1"><br>
+        <label for="tickets">For Multi Tickets</label>
+        <input class="tickets-input" placeholder="&#9885;" type="number" id="tickets" value="">
+    </div>
+</body>
+<script src="./ybs.js"></script>
+
+</html>
